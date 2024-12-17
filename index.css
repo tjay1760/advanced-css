@@ -6,17 +6,30 @@ body{
     justify-content: center;
     background-color: #e7d39f;
     gap: 12px;
+    color:antiquewhite;
+}
+.rect{
+    width:200px;
+    height:80px;
+    background-color: #522d5b;
+    text-align: center;
 }
 .rounded{
     width: 200px;
-    height: 80px;
+    height: 200px;
     background-color: #522d5b;
     border-radius: 10px;
+    text-align: center;
+}
+.elliptical{
+    border-top-left-radius: 100px 100px;
 }
 .varied{
     border-radius: 20px 20px 2rem 10%;
 }
-
+.circle{
+    border-radius: 50%;
+}
 .flag{
 width: 100px;
 height: 100px;
