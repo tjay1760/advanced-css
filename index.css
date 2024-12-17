@@ -1,8 +1,6 @@
-body{
-    background-color: aqua;
-}
+
 .water{
-    background-color: blueviolet;
+    background-color: black;
     color:aliceblue;
 }
 .water::before{
