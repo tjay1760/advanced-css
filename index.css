@@ -1,17 +1,28 @@
-body{
-    counter-reset: water-type;
-}
-.water{
-    background-color: black;
-    color:aliceblue;
-}
-.water::before{
-counter-increment: water-type;
-content:counter(water-type)
+
+
+
+.flag{
+width: 100px;
+height: 100px;
+background-color: blue;
 
 }
-.water::after{
-          content:close-quote;
-        height: 20px;
-        width: 20px;
-    }
+
+.inverted-radius {
+    --r: 25px; /* the radius */
+    --s: 40px; /* the size of the corner*/
+    
+    width: 250px;
+    aspect-ratio: 1;
+    background: #3FB8AF;
+    border-radius: var(--r);
+    --_m:/calc(2*var(--r)) calc(2*var(--r))
+      radial-gradient(#000 70%,#0000 72%) no-repeat;
+    mask:
+      right calc(var(--s) + var(--r)) top 0 var(--_m),
+      right calc(var(--s) + var(--r)) var(--_m),
+      radial-gradient(var(--s) at 100% 0,#0000 99%,#000 101%) 
+       calc(-1*var(--r)) var(--r) no-repeat,
+      conic-gradient(at calc(100% - var(--s) - 2*var(--r)) calc(var(--s) + 2*var(--r)),
+       #0000 25%,#000 0);
+  }
