@@ -40,12 +40,15 @@ height: 100px;
 background-color: blue;
 
 }
+.notched{
+    transform: rotate(90deg);
+}
 .notched::before{
     content:"";
     width:40px;
     margin-left: -75px;
     height:40px;
-    background-color: #000;
+    background-color: #e7d39f;
     position:absolute;
     border-top-left-radius: 40px;
     transform:rotate(180deg);
