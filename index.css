@@ -1,11 +1,13 @@
-
+body{
+    counter-reset: water-type;
+}
 .water{
     background-color: black;
     color:aliceblue;
 }
 .water::before{
-    position: relative;
-    content: open-quote;
+counter-increment: water-type;
+content:counter(water-type)
 
 }
 .water::after{
