@@ -6,16 +6,12 @@ body{
     color:aliceblue;
 }
 .water::before{
-display:block;
     position: relative;
-    content:"cc";
-    background-color: blanchedalmond;
+    content: open-quote;
+
 }
 .water::after{
-    display:block;
-
-        content:"";
+          content:close-quote;
         height: 20px;
         width: 20px;
-        background-color: blanchedalmond;
     }
