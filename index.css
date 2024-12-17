@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     display: flex;
+    flex-wrap: wrap;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -29,6 +30,9 @@ body{
 }
 .circle{
     border-radius: 50%;
+}
+.blob{
+    border-radius: 63px 40px 200px 10px / 21px 65px 73px 75px;
 }
 .flag{
 width: 100px;
