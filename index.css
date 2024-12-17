@@ -1,3 +1,21 @@
 body{
     background-color: aqua;
 }
+.water{
+    background-color: blueviolet;
+    color:aliceblue;
+}
+.water::before{
+display:block;
+    position: relative;
+    content:"cc";
+    background-color: blanchedalmond;
+}
+.water::after{
+    display:block;
+
+        content:"";
+        height: 20px;
+        width: 20px;
+        background-color: blanchedalmond;
+    }
