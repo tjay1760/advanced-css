@@ -1,5 +1,18 @@
-
-
+body{
+    margin: 0px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7d39f;
+    gap: 12px;
+}
+.rounded{
+    width: 200px;
+    height: 80px;
+    background-color: #522d5b;
+    border-radius: 10px;
+}
 
 .flag{
 width: 100px;
