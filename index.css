@@ -43,6 +43,31 @@ background-color: blue;
 .notched{
     transform: rotate(90deg);
 }
+.my-ineverted-radius{
+    transform: rotate(90deg);
+    overflow:hidden;
+}
+.my-ineverted-radius::before{
+    height:1.5em;
+    width:1.5em;
+    background-color: #000;
+    content:"";
+position:absolute;
+bottom: 2.3em;
+left:0;
+border-top-left-radius: 1rem;
+/* background-color:#522d5b; */
+/* box-shadow: -0.11em -0.4em #e7d39f; */
+z-index: 5;
+}
+.corner{
+    width:2rem;
+    height:2rem;
+    background-color: #000;
+    transform: translateY(-1.13em);
+    border-bottom-right-radius: 5rem;
+    background-color: #e7d39f;
+}
 .notched::before{
     content:"";
     width:40px;
